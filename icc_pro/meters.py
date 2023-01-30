@@ -1,0 +1,2 @@
+class MetersMixin:
+    pass

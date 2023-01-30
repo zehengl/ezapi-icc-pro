@@ -1,0 +1,2 @@
+class VirtualMetersMixin:
+    pass

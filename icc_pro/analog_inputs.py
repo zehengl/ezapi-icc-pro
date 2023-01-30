@@ -1,0 +1,2 @@
+class AnalogInputsMixin:
+    pass
