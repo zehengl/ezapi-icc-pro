@@ -1,12 +1,8 @@
 [project]
 name = "ezapi-icc-pro"
-dynamic = ["version","dependencies"]
-authors = [
-    { name="Zeheng Li", email="imzehengl@gmail.com" },
-]
-maintainers = [
-    { name="Zeheng Li", email="imzehengl@gmail.com" },
-]
+dynamic = ["version", "dependencies"]
+authors = [{ name = "Zeheng Li", email = "imzehengl@gmail.com" }]
+maintainers = [{ name = "Zeheng Li", email = "imzehengl@gmail.com" }]
 description = "A Python wrapper for ICC PRO RESTful API"
 readme = "README.md"
 requires-python = ">=3.7"
@@ -17,6 +13,7 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
+
 [project.urls]
 repository = "https://github.com/zehengl/ezapi-icc-pro"
 homepage = "https://zehengl.github.io/ezapi-icc-pro/"
@@ -25,25 +22,24 @@ homepage = "https://zehengl.github.io/ezapi-icc-pro/"
 [project.scripts]
 icc-pro = "icc_pro.__main__:run"
 
+
 [tool.setuptools_scm]
 
+
 [tool.pytest.ini_options]
-testpaths = [
-    "tests",
-]
-python_files = [
-    "test_*.py"
-]
-addopts = [
-    "--import-mode=importlib",
-]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = ["--import-mode=importlib"]
+
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
+
 [tool.setuptools.dynamic]
-dependencies = {file = ["requirements.txt"]}
+dependencies = { file = ["requirements.txt"] }
+
 
 [build-system]
-requires = ["setuptools>=67.0","setuptools_scm>=7.1.0"]
+requires = ["setuptools>=67.0", "setuptools_scm>=7.1.0"]
 build-backend = "setuptools.build_meta"
