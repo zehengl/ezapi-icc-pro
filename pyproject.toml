@@ -33,6 +33,9 @@ testpaths = [
 python_files = [
     "test_*.py"
 ]
+addopts = [
+    "--import-mode=importlib",
+]
 
 [tool.setuptools.packages.find]
 where = ["src"]
