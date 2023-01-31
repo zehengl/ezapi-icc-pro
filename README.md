@@ -8,12 +8,6 @@
 
 A Python wrapper for ICC PRO RESTful API
 
-## Install
-
-## Test
-
-    python setup.py test
-
 ## Credits
 
 - [Logo][1] by [Chanut is Industries][2]
