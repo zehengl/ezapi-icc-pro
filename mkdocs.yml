@@ -1,7 +1,6 @@
 site_name: ezapi-icc-pro
 nav:
   - Home: index.md
-  - About: about.md
 theme:
   name: material
   font:
