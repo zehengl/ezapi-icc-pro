@@ -6,6 +6,7 @@ mkdocs==1.4.2
 pip-check-updates==0.18.1
 pylint==2.15.10
 pytest==7.2.1
+pytest-mock==3.10.0
 setuptools==67.0.0
 twine==4.0.2
 wheel==0.38.4
