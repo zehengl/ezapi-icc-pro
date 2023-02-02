@@ -1,7 +1,5 @@
 __pycache__
 .pytest_cache
-.eggs
 .venv
 *.egg-info
-build
 dist
