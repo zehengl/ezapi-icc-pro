@@ -24,6 +24,8 @@ mixins = [
 
 
 class ICC_PRO(*mixins):
+    url = None
+
     def __init__(self, host, username, password, client_id, client_secret):
         self.host = host
         self.username = username

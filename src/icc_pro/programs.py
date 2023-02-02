@@ -1,11 +1,17 @@
-class ProgramsMixin:
+from urllib.parse import urljoin
 
+from .core import process_response
+
+
+class ProgramsMixin:
     url = "iccpro/api/programs"
 
-    def get_virtual_programs_general_info(self):
-        pass
+    @process_response
+    def get_programs_general_info(self):
+        url = urljoin(self.host, ProgramsMixin.url)
+        return self.make_request("GET", url)
 
-    def get_virtual_programs_detailed_info(self):
+    def get_programs_detailed_info(self):
         pass
 
     def set_programs_status(self):
