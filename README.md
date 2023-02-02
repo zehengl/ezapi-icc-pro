@@ -4,6 +4,7 @@
 
 # ezapi-icc-pro
 
+[![pytest](https://github.com/zehengl/ezapi-icc-pro/actions/workflows/pytest.yml/badge.svg)](https://github.com/zehengl/ezapi-icc-pro/actions/workflows/pytest.yml)
 ![coding_style](https://img.shields.io/badge/code%20style-black-000000.svg)
 
 A Python wrapper for ICC PRO RESTful API
