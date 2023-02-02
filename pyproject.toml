@@ -19,10 +19,6 @@ repository = "https://github.com/zehengl/ezapi-icc-pro"
 homepage = "https://zehengl.github.io/ezapi-icc-pro/"
 
 
-[project.scripts]
-icc-pro = "icc_pro.__main__:run"
-
-
 [tool.setuptools_scm]
 
 
