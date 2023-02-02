@@ -3,12 +3,37 @@ nav:
   - Home: index.md
 theme:
   name: material
+  favicon: https://cdn0.iconfinder.com/data/icons/smart-farm-line-agriculture-technology/512/Irrigation-512.png
+  logo: https://cdn0.iconfinder.com/data/icons/smart-farm-line-agriculture-technology/512/Irrigation-512.png
   font:
     text: Roboto
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
   features:
     - header.autohide
+repo_name: zehengl/ezapi-icc-pro
+repo_url: https://github.com/zehengl/ezapi-icc-pro
 plugins:
   - search
   - tags
+  - minify:
+      minify_html: true
   - git-revision-date-localized:
       type: date
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/zehengl
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/zehengl
