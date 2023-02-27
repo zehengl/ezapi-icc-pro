@@ -42,5 +42,5 @@ class ICC_PRO(*mixins):
     def list_detailed_endpoints(self):
         return [(m.__name__[:-5], urljoin(self.host, m.url)) for m in mixins]
 
-    def make_request(self, method, url, payload=None):
-        return self.session.request(method, url, json=payload)
+    def make_request(self, method, url, **kwargs):
+        return self.session.request(method, url, **kwargs)

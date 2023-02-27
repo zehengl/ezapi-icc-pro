@@ -1,9 +1,23 @@
-class TokenMixin:
+from urllib.parse import urljoin
 
+from .core import process_response
+
+
+class TokenMixin:
     url = "iccpro/token"
 
-    def get_token(self, host, username, password, client_id, client_secret):
-        pass
+    @process_response
+    def acquire_token(self):
+        url = urljoin(self.host, TokenMixin.url)
+        headers = {"content-type": "application/x-www-form-urlencoded"}
+        json = {
+            "grant_type": "password",
+            "username": self.username,
+            "password": self.password,
+            "client_id": self.client_id,
+            "client_secret": self.client_secret,
+        }
+        return self.make_request("POST", url, headers=headers, json=json)
 
     def refresh_token(self, host, client_id, client_secret, refresh_token):
         pass
