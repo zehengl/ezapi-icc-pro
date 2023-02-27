@@ -9,15 +9,17 @@ class TokenMixin:
     @process_response
     def acquire_token(self):
         url = urljoin(self.host, TokenMixin.url)
-        headers = {"content-type": "application/x-www-form-urlencoded"}
-        json = {
+        headers = {
+            "content-type": "application/x-www-form-urlencoded",
+        }
+        data = {
             "grant_type": "password",
             "username": self.username,
             "password": self.password,
             "client_id": self.client_id,
             "client_secret": self.client_secret,
         }
-        return self.make_request("POST", url, headers=headers, json=json)
+        return self.make_request("POST", url, headers=headers, data=data)
 
     def refresh_token(self, host, client_id, client_secret, refresh_token):
         pass

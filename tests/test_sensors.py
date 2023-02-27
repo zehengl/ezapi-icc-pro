@@ -9,5 +9,5 @@ def test_get_sensors_general_info(mocker, iccpro):
 
     m.assert_called_once_with(
         "GET",
-        urljoin(getenv("host", "http://localhost/"), "iccpro/api/sensors"),
+        urljoin(getenv("iccpro_host", "http://localhost/"), "iccpro/api/sensors"),
     )
