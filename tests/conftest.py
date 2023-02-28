@@ -1,10 +1,11 @@
-import pytest
 from os import getenv
+
+import pytest
 from dotenv import load_dotenv
 
-load_dotenv()
-
 from icc_pro import ICC_PRO
+
+load_dotenv()
 
 
 @pytest.fixture()
