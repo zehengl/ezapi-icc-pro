@@ -1,6 +1,8 @@
 from urllib.parse import urljoin
 
-from .core import process_response
+from requests.models import PreparedRequest
+
+from .core import process_response, required_kwargs
 
 
 class SensorsMixin:
@@ -11,8 +13,17 @@ class SensorsMixin:
         url = urljoin(self.host, SensorsMixin.url)
         return self.make_request("GET", url)
 
-    def get_sensors_current_data(self):
-        pass
+    @process_response
+    def get_sensors_current_data(self, **kwargs):
+        url = urljoin(self.host, f"{SensorsMixin.url}/current")
+        req = PreparedRequest()
+        req.prepare_url(url, kwargs)
+        return self.make_request("GET", req.url)
 
-    def get_sensors_historical_data(self):
-        pass
+    @required_kwargs("fromdatetime", "todatetime", "resolution")
+    @process_response
+    def get_sensors_historical_data(self, **kwargs):
+        url = urljoin(self.host, f"{SensorsMixin.url}/history")
+        req = PreparedRequest()
+        req.prepare_url(url, kwargs)
+        return self.make_request("GET", req.url)

@@ -35,6 +35,15 @@ class ICC_PRO(*mixins):
 
         self.session = requests.Session()
 
+        resp = self.acquire_token()
+        self._access_token = resp.get("access_token")
+        self._refresh_token = resp.get("refresh_token")
+        self.session.headers.update(
+            {
+                "Authorization": f"Bearer {self._access_token}",
+            }
+        )
+
     @classmethod
     def list_generic_endpoints(cls):
         return [(m.__name__[:-5], m.url) for m in mixins]

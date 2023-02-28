@@ -1,5 +1,7 @@
 from urllib.parse import urljoin
 
+from requests.models import PreparedRequest
+
 from .core import process_response
 
 
@@ -11,8 +13,12 @@ class ProgramsMixin:
         url = urljoin(self.host, ProgramsMixin.url)
         return self.make_request("GET", url)
 
-    def get_programs_detailed_info(self):
-        pass
+    @process_response
+    def get_programs_detailed_info(self, **kwargs):
+        url = urljoin(self.host, f"{ProgramsMixin.url}/getprograms")
+        req = PreparedRequest()
+        req.prepare_url(url, kwargs)
+        return self.make_request("GET", req.url)
 
     def set_programs_status(self):
         pass
