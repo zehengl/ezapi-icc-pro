@@ -22,3 +22,9 @@ jobs:
           pip install -r requirements-test.txt
           pip install -e .
           pytest
+        env:
+          iccpro_host: ${{ secrets.ICCPRO_HOST }}
+          iccpro_username: ${{ secrets.ICCPRO_USERNAME }}
+          iccpro_password: ${{ secrets.ICCPRO_PASSWORD }}
+          iccpro_client_id: ${{ secrets.ICCPRO_CLIENT_ID }}
+          iccpro_client_secret: ${{ secrets.ICCPRO_CLIENT_SECRET }}
