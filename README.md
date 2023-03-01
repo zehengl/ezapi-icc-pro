@@ -11,6 +11,10 @@ A Python wrapper for ICC PRO RESTful API
 
 ## Install
 
+From [PyPi](https://pypi.org/project/ezapi-icc-pro/)
+
+    pip install ezapi-icc-pro
+
 From [GitHub](https://github.com/zehengl/ezapi-icc-pro)
 
     pip install git+https://github.com/zehengl/ezapi-icc-pro.git
