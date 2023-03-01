@@ -21,16 +21,16 @@ class ProgramsMixin:
         return self.make_request("GET", req.url)
 
     def set_programs_status(self):
-        pass
+        raise NotImplementedError
 
     def set_programs_preset_data(self):
-        pass
+        raise NotImplementedError
 
     def irrigate_now_program_group(self):
-        pass
+        raise NotImplementedError
 
     def reset_program_alarm(self):
-        pass
+        raise NotImplementedError
 
     def change_program_depth(self):
-        pass
+        raise NotImplementedError

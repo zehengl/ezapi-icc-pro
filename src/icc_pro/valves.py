@@ -28,7 +28,7 @@ class ValvesMixin:
         return self.make_request("GET", req.url)
 
     def create_valves_snapshot(self):
-        pass
+        raise NotImplementedError
 
     def update_valves_snapshot(self):
-        pass
+        raise NotImplementedError
