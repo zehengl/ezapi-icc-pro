@@ -22,6 +22,7 @@ theme:
         name: Switch to light mode
   features:
     - header.autohide
+    - content.code.copy
 repo_name: zehengl/ezapi-icc-pro
 repo_url: https://github.com/zehengl/ezapi-icc-pro
 plugins:
@@ -30,7 +31,7 @@ plugins:
   - minify:
       minify_html: true
   - git-revision-date-localized:
-      type: date
+      type: timeago
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -40,3 +41,10 @@ extra:
 markdown_extensions:
   - attr_list
   - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
