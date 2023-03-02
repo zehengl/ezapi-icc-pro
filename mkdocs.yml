@@ -1,6 +1,14 @@
 site_name: ezapi-icc-pro
 nav:
   - Home: index.md
+  - Endpoints:
+      - endpoints/index.md
+      - Valves: endpoints/valves.md
+      - Meters: endpoints/meters.md
+      - Virtual Meters: endpoints/virtual_meters.md
+      - Programs: endpoints/programs.md
+      - Analog Inputs: endpoints/analog_inputs.md
+      - Sensors: endpoints/sensors.md
 theme:
   name: material
   favicon: https://cdn0.iconfinder.com/data/icons/smart-farm-line-agriculture-technology/512/Irrigation-512.png
@@ -32,6 +40,8 @@ plugins:
       minify_html: true
   - git-revision-date-localized:
       type: timeago
+      enable_creation_date: true
+  - section-index
 extra:
   social:
     - icon: fontawesome/brands/github

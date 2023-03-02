@@ -23,3 +23,5 @@ client_secret = "..."
 
 iccpro = ICC_PRO(host, username, password, client_id, client_secret)
 ```
+
+See detailed usages at [Endpoints](endpoints/index.md) page.
