@@ -31,6 +31,7 @@ theme:
   features:
     - header.autohide
     - content.code.copy
+    - navigation.top
 repo_name: zehengl/ezapi-icc-pro
 repo_url: https://github.com/zehengl/ezapi-icc-pro
 plugins:
