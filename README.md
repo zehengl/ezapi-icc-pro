@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://cdn0.iconfinder.com/data/icons/smart-farm-line-agriculture-technology/512/Irrigation-512.png" alt="logo" height="196">
+    <img src="https://cdn0.iconfinder.com/data/icons/smart-farm-line-agriculture-technology/512/Irrigation-512.png" alt="logo" height="128">
 </div>
 
 # ezapi-icc-pro
@@ -22,6 +22,10 @@ From [PyPi](https://pypi.org/project/ezapi-icc-pro/)
 From [GitHub](https://github.com/zehengl/ezapi-icc-pro)
 
     pip install git+https://github.com/zehengl/ezapi-icc-pro.git
+
+## Usage
+
+Check out these [examples](https://zehengl.github.io/ezapi-icc-pro/endpoints/).
 
 ## Credits
 
