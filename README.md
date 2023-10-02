@@ -10,6 +10,7 @@
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ezapi-icc-pro)
 ![PyPI - Wheel](https://img.shields.io/pypi/wheel/ezapi-icc-pro)
 [![Downloads](https://static.pepy.tech/badge/ezapi-icc-pro)](https://pepy.tech/project/ezapi-icc-pro)
+[![GitHub Pages](https://github.com/zehengl/ezapi-icc-pro/actions/workflows/gh-deploy.yml/badge.svg)](https://github.com/zehengl/ezapi-icc-pro/actions/workflows/gh-deploy.yml)
 
 A Python wrapper for ICC PRO RESTful API
 
