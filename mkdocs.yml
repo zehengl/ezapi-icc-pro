@@ -45,7 +45,6 @@ plugins:
   - git-revision-date-localized:
       type: timeago
       enable_creation_date: true
-  # - section-index
 extra:
   social:
     - icon: fontawesome/brands/github
