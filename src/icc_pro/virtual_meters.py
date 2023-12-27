@@ -4,7 +4,6 @@ from .core import process_response
 
 
 class VirtualMetersMixin:
-
     url = "iccpro/api/virtualmeters"
 
     @process_response
