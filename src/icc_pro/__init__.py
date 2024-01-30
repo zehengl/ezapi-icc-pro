@@ -26,7 +26,7 @@ mixins = [
 class ICC_PRO(*mixins):
     url = None
 
-    def __init__(self, host, username, password, client_id, client_secret):
+    def __init__(self, host, username, password, client_id, client_secret, login=True):
         self.host = host
         self.username = username
         self.password = password
@@ -35,7 +35,8 @@ class ICC_PRO(*mixins):
 
         self.session = requests.Session()
 
-        self.set_tokens(self.acquire_token())
+        if login:
+            self.set_tokens(self.acquire_token())
 
     def set_tokens(self, resp):
         self._access_token = resp.get("access_token")
