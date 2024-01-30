@@ -35,7 +35,9 @@ class ICC_PRO(*mixins):
 
         self.session = requests.Session()
 
-        resp = self.acquire_token()
+        self.set_tokens(self.acquire_token())
+
+    def set_tokens(self, resp):
         self._access_token = resp.get("access_token")
         self._refresh_token = resp.get("refresh_token")
         self.session.headers.update(
@@ -43,6 +45,9 @@ class ICC_PRO(*mixins):
                 "Authorization": f"Bearer {self._access_token}",
             }
         )
+
+    def renew(self):
+        self.set_tokens(self.refresh_token())
 
     @classmethod
     def list_generic_endpoints(cls):
