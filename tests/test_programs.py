@@ -11,15 +11,17 @@ def test_mock_get_programs_general_info(mocker, iccpro):
 
     m.assert_called_once_with(
         "GET",
-        urljoin(getenv("iccpro_host", "http://localhost/"), "iccpro/api/programs"),
+        urljoin(getenv("iccpro_host"), "iccpro/api/programs"),
     )
 
 
+@pytest.mark.skipif(not getenv("iccpro_host"), reason="Missing config")
 def test_get_programs_general_info(iccpro):
     assert iccpro.get_programs_general_info()
 
 
-def test_get_programs_general_info(iccpro):
+@pytest.mark.skipif(not getenv("iccpro_host"), reason="Missing config")
+def test_get_programs_detailed_info(iccpro):
     assert iccpro.get_programs_detailed_info()
 
 

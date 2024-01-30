@@ -11,18 +11,21 @@ def test_mock_get_valves_general_info(mocker, iccpro):
 
     m.assert_called_once_with(
         "GET",
-        urljoin(getenv("iccpro_host", "http://localhost/"), "iccpro/api/valves"),
+        urljoin(getenv("iccpro_host"), "iccpro/api/valves"),
     )
 
 
+@pytest.mark.skipif(not getenv("iccpro_host"), reason="Missing config")
 def test_get_valves_general_info(iccpro):
     assert iccpro.get_valves_general_info()
 
 
+@pytest.mark.skipif(not getenv("iccpro_host"), reason="Missing config")
 def test_get_valves_gis_info(iccpro):
     assert iccpro.get_valves_gis_info()
 
 
+@pytest.mark.skipif(not getenv("iccpro_host"), reason="Missing config")
 def test_get_valves_status(iccpro):
     assert iccpro.get_valves_status()
 
