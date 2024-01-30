@@ -1,30 +1,32 @@
-```python
-from icc_pro import ICC_PRO
+??? note "Create ICC_PRO instance"
 
-host = "..."
-username = "..."
-password = "..."
-client_id = "..."
-client_secret = "..."
+    ```python
+    from icc_pro import ICC_PRO
 
-iccpro = ICC_PRO(host, username, password, client_id, client_secret)
-```
+    host = "..."
+    username = "..."
+    password = "..."
+    client_id = "..."
+    client_secret = "..."
 
-### To get the user's sensors
+    iccpro = ICC_PRO(host, username, password, client_id, client_secret)
+    ```
 
-```python
+### To get sensors general info
+
+```python linenums="1" hl_lines="1"
 iccpro.get_sensors_general_info()
 ```
 
-### To get the user's sensors current data
+### To get sensors current data
 
-```python
+```python linenums="1" hl_lines="1"
 iccpro.get_sensors_current_data()
 ```
 
-### To get the user's sensors historical data
+### To get sensors historical data
 
-```python
+```python linenums="1" hl_lines="20-22"
 from datetime import datetime
 
 

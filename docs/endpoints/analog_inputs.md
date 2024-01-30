@@ -1,30 +1,32 @@
-```python
-from icc_pro import ICC_PRO
+??? note "Create ICC_PRO instance"
 
-host = "..."
-username = "..."
-password = "..."
-client_id = "..."
-client_secret = "..."
+    ```python
+    from icc_pro import ICC_PRO
 
-iccpro = ICC_PRO(host, username, password, client_id, client_secret)
-```
+    host = "..."
+    username = "..."
+    password = "..."
+    client_id = "..."
+    client_secret = "..."
 
-### To get the user's analog inputs
+    iccpro = ICC_PRO(host, username, password, client_id, client_secret)
+    ```
 
-```python
+### To get analog inputs general info
+
+```python linenums="1" hl_lines="1"
 iccpro.get_analog_inputs_general_info()
 ```
 
-### To get the user's analog inputs current data
+### To get analog inputs current data
 
-```python
+```python linenums="1" hl_lines="1"
 iccpro.get_analog_inputs_current_data()
 ```
 
-### To get the user's analog inputs historical data
+### To get analog inputs historical data
 
-```python
+```python linenums="1" hl_lines="20-22"
 from datetime import datetime
 
 
