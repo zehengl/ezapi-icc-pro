@@ -6,3 +6,4 @@
 - [Programs API](programs.md)
 - [Analog Inputs API](analog_inputs.md)
 - [Sensors API](sensors.md)
+- [Accumulations API](accumulations.md)
