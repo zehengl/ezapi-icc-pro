@@ -4,6 +4,7 @@ import requests
 
 from .accumulations import AccumulationsMixin
 from .analog_inputs import AnalogInputsMixin
+from .field_units import FieldUnitsMixin
 from .meters import MetersMixin
 from .programs import ProgramsMixin
 from .sensors import SensorsMixin
@@ -13,6 +14,7 @@ from .virtual_meters import VirtualMetersMixin
 
 mixins = [
     AccumulationsMixin,
+    FieldUnitsMixin,
     AnalogInputsMixin,
     MetersMixin,
     ProgramsMixin,
