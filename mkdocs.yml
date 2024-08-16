@@ -1,4 +1,5 @@
 site_name: ezapi-icc-pro
+site_author: Zeheng Li
 nav:
   - Home: index.md
   - Endpoints:
