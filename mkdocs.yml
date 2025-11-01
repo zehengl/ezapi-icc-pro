@@ -13,8 +13,8 @@ nav:
       - Accumulations: endpoints/accumulations.md
 theme:
   name: material
-  favicon: https://cdn0.iconfinder.com/data/icons/smart-farm-line-agriculture-technology/512/Irrigation-512.png
-  logo: https://cdn0.iconfinder.com/data/icons/smart-farm-line-agriculture-technology/512/Irrigation-512.png
+  favicon: https://raw.githubusercontent.com/zehengl/ezapi-icc-pro/refs/heads/main/logo.jpg
+  logo: https://raw.githubusercontent.com/zehengl/ezapi-icc-pro/refs/heads/main/logo.jpg
   font:
     text: Roboto
   palette:
