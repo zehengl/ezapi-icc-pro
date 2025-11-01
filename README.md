@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://cdn0.iconfinder.com/data/icons/smart-farm-line-agriculture-technology/512/Irrigation-512.png" alt="logo" height="128">
+    <img src="https://raw.githubusercontent.com/zehengl/ezapi-icc-pro/refs/heads/main/logo.jpg" alt="logo" height="128">
 </div>
 
 # ezapi-icc-pro
@@ -27,10 +27,3 @@ From [GitHub](https://github.com/zehengl/ezapi-icc-pro)
 ## Usage
 
 Check out these [examples](https://zehengl.github.io/ezapi-icc-pro/endpoints/).
-
-## Credits
-
-- [Logo][1] by [Chanut is Industries][2]
-
-[1]: https://www.iconfinder.com/icons/4629153/agricultural_agriculture_agritect_farming_irrigation_smart_farm_water_icon
-[2]: https://www.iconfinder.com/Chanut-is
