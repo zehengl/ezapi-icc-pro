@@ -1,2 +1,2 @@
 requests
-wrapt==2.0.0
+wrapt==2.0.1
